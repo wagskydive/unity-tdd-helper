@@ -3,27 +3,77 @@
   "Description": "This is my amazing project",
   "Path": "/MY_UNITY_PROJECT/",
   "How": "Description of the system in more detail, will be added to README.md",
+
+  "Properties": 
+  [
+    {
+      "Name": "my property name",
+      "Type": "parameter type",
+      "Value": "parameter value"
+    }
+  ],
   "Classes": [
     {
       "Name:": "MyMainClass",
       "Description": "My main class purpose",
-      "Parameters": [
+      "Parameters": 
+      [
         {
-          "Name": "my parameter name",
+          "Name": "my private parameter name",
           "Type": "parameter type",
           "Value": "parameter value"
         },
         {
-          "Name": "my parameter",
-          "Type": "string",
-          "Value": "parameter value"
+          "Name": "my image texture",
+          "Type": "Texture2D",
+          "Value": "/MyImageFolder/"
+        },
+        {
+          "Name": "my integer",
+          "Type": "integer",
+          "Value": "integer value"
+        }
+      ],
+      "Functions": [
+        {
+          "Name": "MyFunction",
+          "Description": "My function purpose",
+          "Parameters": 
+          [
+            {
+              "Name": "private-my-parameter-name"
+            },
+            {
+              "Name": "private-my-image-texture"
+            }
+          ],
+          "ReturnType": "void"
+
+        },
+        {
+          "Name": "MyOtherFunction",
+          "Description": "My other function purpose",
+          "LogicType":"DataCreator",
+
+          "Parameters": 
+          [
+            {
+              "Name": "private-my-private-parameter-name"
+            },
+            {
+              "Name": "my-property-name"
+            }
+          ],
+          "ReturnType": "Texture2D"
+        
         }
       ]
     },
     {
-      "Name:": "MyMainClass",
+      "Name:": "MySubClass",
       "Description": "My main class purpose",
-      "Parameters": [
+      "Parameters": 
+      [
         {
           "Name": "my parameter name",
           "Type": "parameter type",
