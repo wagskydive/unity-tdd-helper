@@ -13,7 +13,7 @@ Unity Editor Tool
 {
   "Project Name": "project-name",
   "Description": "This is my amazing project"
-}
+};
 
 
 
