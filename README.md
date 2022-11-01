@@ -9,7 +9,7 @@ Unity Editor Tool
  ### Created a temporary sub assembly with no references
   
 
-### Architecture Dedign window   
+### Architecture Design window   
 ##### UML diagram window
   * visualizes the system from my-system.architecture/ Architecture class?
 
@@ -46,7 +46,7 @@ Unity Editor Tool
   ##### leaves logic open but asserts its behaviour
 
 
-  ##### creates and reads  my-system.json file with the structure of the system
+  ##### creates and reads  architecture.json file with the structure of the system
   ##### !Expects a certain folder structure
 
   ##### reads architecture.yml
