@@ -6,9 +6,6 @@ unity package to help generating classes and functions and automates the creatio
 Unity Editor Tool
 
 
- ### Created a temporary sub assembly with no references
- * [https://youtu.be/vLKeqS1PeTU?t=175]
-  
 
 ### Architecture Design window   
 [https://github.com/wagskydive/unity-tdd-helper/milestone/3]
