@@ -11,8 +11,7 @@ Unity Editor Tool
   
 
 ### Architecture Design window   
-##### UML diagram window
-  * visualizes the system from my-system.architecture/ Architecture class?
+[https://github.com/wagskydive/unity-tdd-helper/milestone/3]
 
 ### Project creation window
   ##### shows only on menu item "create new project"
