@@ -8,7 +8,7 @@ Unity Editor Tool
 
 
 * PLAN: 
-  > Architecture class has all the data loaded of the system diagram
+  - Architecture class has all the data loaded of the system diagram
 
 
 
@@ -18,28 +18,28 @@ Unity Editor Tool
   > visualizes the system from my-system.architecture/ Architecture class?
 
 * project creation window
-  > shows only on menu item "create new project"
-  > Has a form to input data
+  - shows only on menu item "create new project"
+  - Has a form to input data
       - Project Name
-      - What > Description
-      - Where > project location (maybe automated from expected filestructure below
-      - How > Description where user is asked to define the the way the system is intended to work
+      - What - Description
+      - Where - project location (maybe automated from expected filestructure below
+      - How - Description where user is asked to define the the way the system is intended to work
       - ? Flag create example files
 
-  > Creates project-name.architecture (is json file with .architecture extension)
-  > Creates Folder Structure
-  > ? Creates Example Files
+  - Creates project-name.architecture (is json file with .architecture extension)
+  - Creates Folder Structure
+  - ? Creates Example Files
 
 * interface creation
 * function creation
 
 * Test Creator
-> creates tests from function defenitions
-> 
+- creates tests from function defenitions
+- 
 
 
 * creates and reads  my-system.json file with the structure of the system
-  > !Expects a certain folder structure
+  - !Expects a certain folder structure
 
 * reads package-configuration.yml
   
