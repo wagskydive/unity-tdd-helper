@@ -1,0 +1,40 @@
+{
+  "Project Name": "project-name",
+  "Description": "This is my amazing project",
+  "Path": "/MY_UNITY_PROJECT/",
+  "How": "Description of the system in more detail, will be added to README.md",
+  "Classes": [
+    {
+      "Name:": "MyMainClass",
+      "Description": "My main class purpose",
+      "Parameters": [
+        {
+          "Name": "my parameter name",
+          "Type": "parameter type",
+          "Value": "parameter value"
+        },
+        {
+          "Name": "my parameter",
+          "Type": "string",
+          "Value": "parameter value"
+        }
+      ]
+    },
+    {
+      "Name:": "MyMainClass",
+      "Description": "My main class purpose",
+      "Parameters": [
+        {
+          "Name": "my parameter name",
+          "Type": "parameter type",
+          "Value": "parameter value"
+        },
+        {
+          "Name": "my parameter",
+          "Type": "string",
+          "Value": "parameter value"
+        }
+      ]
+    }
+  ]
+}
