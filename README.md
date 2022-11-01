@@ -6,7 +6,8 @@ unity package to help generating classes and functions and automates the creatio
 Unity Editor Tool
 
 
-
+ ### Created a temporary sub assembly with no dependencies and no references
+  
 
 ### UML diagram window
   ##### visualizes the system from my-system.architecture/ Architecture class?
@@ -24,13 +25,18 @@ Unity Editor Tool
   ##### Creates Folder Structure
   ##### ? Creates Example Files
 
+### What-Where-How Window
+##### Class Creation
 
-### function creation
-  ##### What: Function name and function expected result
-  ##### Where/When: Function paramenters and resource locations
-  ##### How: function logic
-### Interface creation
-  ##### Creates interfaces that contain functions
+
+##### Function Creation
+
+  * What: Function name and function expected result
+  * Where/When: Function paramenters and resource locations
+  * How: function logic
+  
+##### Interface creation
+  * Creates interfaces that contain functions
 
 
 ### Test Creator
@@ -61,5 +67,5 @@ Unity Editor Tool
   2 Validate json and show if it has the same functionality as the files ? compiler ? 
   
   3 Git intergration to create a branch when changes are made to json file
-  
+
 
