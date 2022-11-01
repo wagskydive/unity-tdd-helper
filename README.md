@@ -8,14 +8,11 @@ Unity Editor Tool
 
 
 * PLAN: 
-  1 architacture file
-  ```javascript
+```json
 {
   "Project Name": "project-name",
   "Description": "This is my amazing project"
-};
-
-
+}
 
 ```
   2 Architecture class has all the data loaded of the system diagram
