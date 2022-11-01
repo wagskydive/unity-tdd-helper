@@ -6,7 +6,7 @@ unity package to help generating classes and functions and automates the creatio
 Unity Editor Tool
 
 
- ### Created a temporary sub assembly with no dependencies and no references
+ ### Created a temporary sub assembly with no references
   
 
 ### UML diagram window
