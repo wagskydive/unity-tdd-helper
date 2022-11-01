@@ -14,17 +14,7 @@ Unity Editor Tool
 [https://github.com/wagskydive/unity-tdd-helper/milestone/3]
 
 ### Project creation window
-  ##### shows only on menu item "create new project"
-  ##### Has a form to input data
-      * Project Name
-      * What - Description
-      * Where - project location (maybe automated from expected filestructure below
-      * How - Description where user is asked to define the the way the system is intended to work
-      * ? Flag create example files
-
-  ##### Creates project-name.architecture (is json file with .architecture extension)
-  ##### Creates Folder Structure
-  ##### ? Creates Example Files
+[https://github.com/wagskydive/unity-tdd-helper/milestone/5]
 
 ### What-Where-How Window
 ##### Class Creation
