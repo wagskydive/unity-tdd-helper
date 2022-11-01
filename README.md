@@ -17,17 +17,6 @@ Unity Editor Tool
 [https://github.com/wagskydive/unity-tdd-helper/milestone/5]
 
 ### What-Where-How Window
-##### Class Creation
-
-
-##### Function Creation
-
-  * What: Function name and function expected result
-  * Where/When: Function paramenters and resource locations
-  * How: function logic
-  
-##### Interface creation
-  * Creates interfaces that contain functions
 
 
 ### Test Creator
