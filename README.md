@@ -6,12 +6,15 @@ unity package to help generating classes and functions and automates the creatio
 Unity Editor Tool
 
 
-
-* PLAN: 
+ 
+Create json example.architecture file
 ```json
 {
   "Project Name": "project-name",
-  "Description": "This is my amazing project"
+  "Description": "This is my amazing project",
+  "Path": "/MY_UNITY_PROJECT/",
+  "How": "Description of the system in more detail, will be added to README.md",
+  
 }
 
 ```
