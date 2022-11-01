@@ -8,7 +8,12 @@ Unity Editor Tool
 
 
 * PLAN: 
-  - Architecture class has all the data loaded of the system diagram
+  1 architacture file
+  ```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+  2 Architecture class has all the data loaded of the system diagram
 
 
 
@@ -30,12 +35,19 @@ Unity Editor Tool
   - Creates Folder Structure
   - ? Creates Example Files
 
-* interface creation
+
 * function creation
+  - What: Function name and function expected result
+  - Where/When: Function paramenters and resource locations
+  - How: function logic
+* Interface creation
+  - Creates interfaces that contain functions
+
 
 * Test Creator
-- creates tests from function defenitions
-- 
+
+- creates tests from function definitions
+- leaves logic open but asserts its behaviour
 
 
 * creates and reads  my-system.json file with the structure of the system
@@ -43,9 +55,6 @@ Unity Editor Tool
 
 * reads package-configuration.yml
   
-
-
-
 * has a function to generate new .cs files
 
 
