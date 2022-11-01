@@ -6,75 +6,60 @@ unity package to help generating classes and functions and automates the creatio
 Unity Editor Tool
 
 
- 
-Create json example.architecture file
-```json
-{
-  "Project Name": "project-name",
-  "Description": "This is my amazing project",
-  "Path": "/MY_UNITY_PROJECT/",
-  "How": "Description of the system in more detail, will be added to README.md",
+
+
+### UML diagram window
+  ##### visualizes the system from my-system.architecture/ Architecture class?
+
+### Project creation window
+  ##### shows only on menu item "create new project"
+  ##### Has a form to input data
+      * Project Name
+      * What - Description
+      * Where - project location (maybe automated from expected filestructure below
+      * How - Description where user is asked to define the the way the system is intended to work
+      * ? Flag create example files
+
+  ##### Creates project-name.architecture (is json file with .architecture extension)
+  ##### Creates Folder Structure
+  ##### ? Creates Example Files
+
+
+### function creation
+  ##### What: Function name and function expected result
+  ##### Where/When: Function paramenters and resource locations
+  ##### How: function logic
+### Interface creation
+  ##### Creates interfaces that contain functions
+
+
+### Test Creator
+
+  ##### creates tests from function definitions
+  ##### leaves logic open but asserts its behaviour
+
+
+  ##### creates and reads  my-system.json file with the structure of the system
+  ##### !Expects a certain folder structure
+
+  ##### reads architecture.yml
   
-}
-
-```
-  2 Architecture class has all the data loaded of the system diagram
+  ##### has a function to generate new .cs files
 
 
-
-
-
-* UML diagram window
-  > visualizes the system from my-system.architecture/ Architecture class?
-
-* project creation window
-  - shows only on menu item "create new project"
-  - Has a form to input data
-      - Project Name
-      - What - Description
-      - Where - project location (maybe automated from expected filestructure below
-      - How - Description where user is asked to define the the way the system is intended to work
-      - ? Flag create example files
-
-  - Creates project-name.architecture (is json file with .architecture extension)
-  - Creates Folder Structure
-  - ? Creates Example Files
-
-
-* function creation
-  - What: Function name and function expected result
-  - Where/When: Function paramenters and resource locations
-  - How: function logic
-* Interface creation
-  - Creates interfaces that contain functions
-
-
-* Test Creator
-
-- creates tests from function definitions
-- leaves logic open but asserts its behaviour
-
-
-* creates and reads  my-system.json file with the structure of the system
-  - !Expects a certain folder structure
-
-* reads package-configuration.yml
-  
-* has a function to generate new .cs files
-
-
-* has a function to read into .cs file structure
+  ##### has a function to read into .cs file structure
  
-* Expects a certain folder structure
-    - ../MY_UNITY_PROJECT_FOLDER/Assets/the-repository-of-my-project
-     - /Editor
-     - /Runtime
-     - /UnitTests
-     - .gitignore
-     - package.json
+  ##### Expects a certain folder structure
+     * ../MY_UNITY_PROJECT_FOLDER/Assets/the-repository-of-my-project
+     * /Editor
+     * /Runtime
+     * /UnitTests
+     * .gitignore
+     * package.json
       
-  > Read .csproj
-  > Validate json and show if it has the same functionality as the json
+  1 Read .csproj
+  2 Validate json and show if it has the same functionality as the files ? compiler ? 
   
-
+  3 Git intergration to create a branch when changes are made to json file
+  
 
