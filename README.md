@@ -10,7 +10,7 @@ Unity Editor Tool
   > visualizes the system from my-system.json/ Project class?
 
 * project creation window
-* class creation
+* interface creation
 * function creation
 
 * Test Creator
