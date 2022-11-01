@@ -9,8 +9,9 @@ Unity Editor Tool
  ### Created a temporary sub assembly with no references
   
 
-### UML diagram window
-  ##### visualizes the system from my-system.architecture/ Architecture class?
+### Architecture Dedign window   
+##### UML diagram window
+  * visualizes the system from my-system.architecture/ Architecture class?
 
 ### Project creation window
   ##### shows only on menu item "create new project"
