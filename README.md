@@ -10,8 +10,13 @@ Unity Editor Tool
 * PLAN: 
   1 architacture file
   ```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+{
+  "Project Name": "project-name",
+  "Description": "This is my amazing project"
+}
+
+
+
 ```
   2 Architecture class has all the data loaded of the system diagram
 
