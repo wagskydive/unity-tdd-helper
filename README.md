@@ -60,6 +60,7 @@ Unity Editor Tool
      * /Editor
      * /Runtime
      * /UnitTests
+     * /TempAssembly
      * .gitignore
      * package.json
       
