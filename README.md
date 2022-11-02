@@ -22,4 +22,6 @@ Unity Editor Tool
 ### Temp Assembly definition
 [https://github.com/wagskydive/unity-tdd-helper/milestone/4]
 
+###### Git settings
+* changed the master pranch protection to pull request required
 
