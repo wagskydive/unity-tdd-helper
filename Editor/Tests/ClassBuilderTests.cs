@@ -22,6 +22,7 @@ public class ClassBuilderTests
     }
 
 
+    [Test]
     public void ClassBuilder_WritesIntoFile()
     {
         var classBuilder = new ClassBuilder();

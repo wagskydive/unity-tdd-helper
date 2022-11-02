@@ -17,10 +17,10 @@ public class ClassBuilder
         return file;
     }
 
-    public void WriteIntoFile(string fileName,string content)
+    public void WriteIntoFile(string filePath,string content)
     {
         //FileStream file = File.OpenWrite(Workfolder+fileName);
-        File.WriteAllText(Workfolder+fileName, content);
+        File.WriteAllText(filePath, content);
 
     }
 
