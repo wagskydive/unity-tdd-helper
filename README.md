@@ -23,5 +23,5 @@ Unity Editor Tool
 [https://github.com/wagskydive/unity-tdd-helper/milestone/4]
 
 ###### Git settings
-* changed the master pranch protection to pull request required
+* changed the master branch protection to pull request required
 
