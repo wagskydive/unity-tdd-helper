@@ -1,3 +1,51 @@
+# architecture.json format configuration
+  # matches the repository name
+  project_name: Name
+  # Used to create readme
+  project_description: Description
+  # Local path
+  project_path: Path
+  # Points to remote repository location
+  project_remote: Remote
+  # Used to create documentation
+  project_how: How
+  # Container of classes
+  project_classes: Classes
+    # Used to create classes
+    class_name: Name
+    # Descripes the class
+    class_description: Description
+    # Container of Properties
+    class_properties: Properties
+      # Used to create property
+      property_name: Name
+      # Descripes the property
+      property_description: Description
+      # Type of the property
+      property_type: Type
+      # Points to the content of the property
+      property_content: Content
+    # Container of Functions
+    class_functions: Functions
+      # Used to create functions
+      function_name: Name
+      # Descripes the function
+      function_description: Description
+      # Points to a Operation type that creates a Test
+      function_operation_type: Operation Type
+      # Type that the function returns
+      function_return_type: Return Type
+      # Container of Parameters
+      function_parameters: Parameters
+        # Used to create parameters
+        parameter_name: Name
+        # Descripes the parameters
+        parameter_description: Descriptions
+        # Type of the parameter
+        parameter_type: Type
+        # Points to the content of the parameter
+        parameter_content: Content
+# Template Keywords
 
-project_name: ProjectName
-lots_more_Key: string_definitions
+
+
