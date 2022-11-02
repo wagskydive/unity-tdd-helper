@@ -48,4 +48,8 @@
 # Template Keywords
 
 
+template_test_class_keyword: TEST_CLASS_NAME
+template_test_function_keyword: TEST_CLASS_FUNCTION
+
+
 

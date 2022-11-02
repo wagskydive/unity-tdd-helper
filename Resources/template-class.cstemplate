@@ -1,0 +1,20 @@
+// Keywords
+// TEST_CLASS_NAME
+// TEST_FUNCTION_NAME
+
+
+using System.Collections;
+using System.Collections.Generic;
+using NUnit.Framework;
+using UnityEngine;
+using UnityEngine.TestTools;
+
+public class TEST_CLASS_NAME
+{
+    // A Test behaves as an ordinary method
+    [Test]
+    public void TEST_FUNCTION_NAME()
+    {
+        
+    }
+}
