@@ -16,4 +16,13 @@ public class ClassBuilder
         file.Close();
         return file;
     }
+
+    public void WriteIntoFile(string fileName,string content)
+    {
+        //FileStream file = File.OpenWrite(Workfolder+fileName);
+        File.WriteAllText(Workfolder+fileName, content);
+
+    }
+
+
 }
