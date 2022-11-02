@@ -9,6 +9,7 @@ public class ClassBuilder
 
     public object CreateFile()
     {
-        throw new NotImplementedException();
+        var file = new Object();
+        return file;
     }
 }
