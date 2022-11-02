@@ -1,47 +1,45 @@
 {
-  "Project Name": "project-name",
+  "Name": "project-name",
   "Description": "This is my amazing project",
   "Path": "/MY_UNITY_PROJECT/",
+  "Remote": "https://github.com/god/heaven-and-earth",
   "How": "Description of the system in more detail, will be added to README.md",
 
-  "Properties": 
-  [
-    {
-      "Name": "my property name",
-      "Type": "parameter type",
-      "Value": "parameter value"
-    }
-  ],
+
   "Classes": [
     {
       "Name:": "MyMainClass",
       "Description": "My main class purpose",
-      "Parameters": 
+      "Properties": 
       [
         {
-          "Name": "my private parameter name",
-          "Type": "parameter type",
-          "Value": "parameter value"
+          "Name": "my private property name",
+          "Description": "This is my private property description",
+          "Type": "property type",
+          "Content": "property content"
         },
         {
           "Name": "my image texture",
+          "Description": "This is my private property description",
           "Type": "Texture2D",
-          "Value": "/MyImageFolder/"
+          "Content": "/MyImageFolder/"
         },
         {
           "Name": "my integer",
           "Type": "integer",
-          "Value": "integer value"
+          "Content": "MySubClass-my-property-content"
         }
       ],
+      
       "Functions": [
         {
           "Name": "MyFunction",
+          "LogicType":"DataCreator",
           "Description": "My function purpose",
           "Parameters": 
           [
             {
-              "Name": "private-my-parameter-name"
+              "Name": "private-my-property-name"
             },
             {
               "Name": "private-my-image-texture"
@@ -52,19 +50,20 @@
         },
         {
           "Name": "MyOtherFunction",
+          "Logic Type":"DataCreator",
           "Description": "My other function purpose",
-          "LogicType":"DataCreator",
+          
 
           "Parameters": 
           [
             {
-              "Name": "private-my-private-parameter-name"
+              "Name": "private-my-private-property-name"
             },
             {
-              "Name": "my-property-name"
+              "Name": "my-parameter-name"
             }
           ],
-          "ReturnType": "Texture2D"
+          "Return Type": "Texture2D"
         
         }
       ]
@@ -72,17 +71,17 @@
     {
       "Name:": "MySubClass",
       "Description": "My main class purpose",
-      "Parameters": 
+      "Properties": 
       [
         {
-          "Name": "my parameter name",
-          "Type": "parameter type",
-          "Value": "parameter value"
+          "Name": "my property name",
+          "Type": "property type",
+          "Content": "property-content"
         },
         {
-          "Name": "my parameter",
-          "Type": "string",
-          "Value": "parameter value"
+          "Name": "my property",
+          "Type": "int",
+          "Content": "property-content"
         }
       ]
     }
