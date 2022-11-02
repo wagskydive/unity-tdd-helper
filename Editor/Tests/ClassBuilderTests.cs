@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using System.IO;
 
 public class ClassBuilderTests
 {
 
     [Test]
-    public void ClassBuilderCreatesFileObject()
+    public void ClassBuilderCreatesFile()
     {
         var classBuilder = new ClassBuilder();
-        var file = classBuilder.CreateFile();
-        Assert.That(file, Is.Not.Null);
+        string fileName = "TestFile.cstemplate";
+        classBuilder.CreateFile(fileName);
+        Assert.That(File.Exists(classBuilder.Workfolder+fileName));
+        File.Delete(classBuilder.Workfolder+fileName);
     }
+
 
 
 }

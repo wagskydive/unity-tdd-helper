@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 
 public class ClassBuilder
 {
@@ -7,9 +8,12 @@ public class ClassBuilder
 
     }
 
-    public object CreateFile()
+    public string Workfolder { get => "Assets/unity-tdd-helper/Resources/";}
+
+    public object CreateFile(string fileName)
     {
-        var file = new Object();
+        FileStream file = File.Create(Workfolder+fileName);
+        file.Close();
         return file;
     }
 }
