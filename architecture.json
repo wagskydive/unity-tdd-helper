@@ -2,7 +2,7 @@
   "Name": "project-name",
   "Description": "This is my amazing project",
   "Path": "/MY_UNITY_PROJECT/",
-  "Remote": "https://github.com/god/heaven-and-earth",
+  "Remote": "https://gitcloud.com/god/heaven-and-earth",
   "How": "Description of the system in more detail, will be added to README.md",
 
 
@@ -30,11 +30,11 @@
           "Content": "MySubClass-my-property-content"
         }
       ],
-      
+
       "Functions": [
         {
           "Name": "MyFunction",
-          "LogicType":"DataCreator",
+          "OperationType":"DataCreator",
           "Description": "My function purpose",
           "Parameters": 
           [
@@ -50,7 +50,7 @@
         },
         {
           "Name": "MyOtherFunction",
-          "Logic Type":"DataCreator",
+          "Operation Type":"DataCreator",
           "Description": "My other function purpose",
           
 
