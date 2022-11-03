@@ -6,6 +6,7 @@ using UnityEngine.TestTools;
 using System.IO;
 using UnityTDDHelper;
 
+
 public class ClassBuilderTests
 {
     string fileName = "TestFile.cstemplate";
@@ -16,8 +17,16 @@ public class ClassBuilderTests
     string architecturePath = "Assets/unity-tdd-helper/architecture-planned.json";
     string fileTestContent = "TestContent";
 
+
+    Architecture CreateTestArchitecture()
+    {
+        return new ClassBuilder(configPath, keywordsPath).ReadArchitecture(architecturePath);
+
+    }
+
+
     [Test]
-    public void ClassBuilder_CreatesFile()
+    public void CreatesFile()
     {
         var classBuilder = new ClassBuilder(configPath, keywordsPath);
         classBuilder.CreateFile(fileName);
@@ -28,7 +37,7 @@ public class ClassBuilderTests
 
 
     [Test]
-    public void ClassBuilder_WritesIntoFile()
+    public void WritesIntoFile()
     {
         var classBuilder = new ClassBuilder(configPath, keywordsPath);
         classBuilder.CreateFile(fileName);
@@ -41,7 +50,7 @@ public class ClassBuilderTests
     }
 
     [Test]
-    public void ClassBuilder_Reads__template_test_class_keyword__TEST_CLASS_NAME_FROM_ArchitectureConfigYML()
+    public void Reads_template_test_class_keyword_ArchitectureConfigYML()
     {
         var classBuilder = new ClassBuilder(configPath, keywordsPath);
 
@@ -85,17 +94,31 @@ public class ClassBuilderTests
         Architecture architecture = classBuilder.ReadArchitecture(architecturePath);
 
         Assert.That(architecture.ProjectName == "project-name");
+        Assert.That(architecture.ProjectNamespace == "MyNamespace");
+        Assert.That(architecture.Description == "This is my amazing project");
         Assert.That(architecture.Path == "/MY_UNITY_PROJECT/");
         Assert.That(architecture.Remote == "https://gitcloud.com/god/heaven-and-earth");
         Assert.That(architecture.How == "Description of the system in more detail, will be added to README.md");
     }
 
     [Test]
-    public void Creates_Architecture_Instance_With_Classes_And_Functions()
+    public void Creates_Architecture_Instance_With_Class_Name_AndDescription()
     {
-        var classBuilder = new ClassBuilder(configPath, keywordsPath);
-        Architecture architecture = classBuilder.ReadArchitecture(architecturePath);
+
+        Architecture architecture = CreateTestArchitecture();
 
         Assert.That(architecture.Classes[0].Name == "MyMainClass");
+        Assert.That(architecture.Classes[0].Description == "My main class purpose");
+    }
+
+    [Test]
+    public void Creates_Architecture_Instance_With_Class_With_Property()
+    {
+        Architecture architecture = CreateTestArchitecture();
+
+        Assert.That(architecture.Classes[0].Properties[0].Name == "my private property name");
+        Assert.That(architecture.Classes[0].Properties[0].FieldType == typeof(int));
+        Assert.That(architecture.Classes[0].Properties[0].Description ==  "This is my private property description");
+
     }
 }

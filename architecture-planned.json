@@ -1,5 +1,6 @@
 {
     "Project Name": "project-name",
+    "Namespace": "MyNamespace",
     "Description": "This is my amazing project",
     "Project Path": "/MY_UNITY_PROJECT/",
     "Remote": "https://gitcloud.com/god/heaven-and-earth",
@@ -15,7 +16,7 @@
           {
             "Name": "my private property name",
             "Description": "This is my private property description",
-            "Type": "property type",
+            "Type": "int",
             "Content": "property content"
           },
           {
