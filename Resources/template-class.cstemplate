@@ -1,8 +1,3 @@
-// Keywords
-// TEST_CLASS_NAME
-// TEST_FUNCTION_NAME
-
-
 using System.Collections;
 using System.Collections.Generic;
 using NUnit.Framework;
