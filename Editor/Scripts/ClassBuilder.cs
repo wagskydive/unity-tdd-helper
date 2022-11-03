@@ -1,14 +1,15 @@
 using System;
 using System.IO;
 using UnityEngine;
+using YamlDotNet.Serialization;
+using YamlDotNet.Serialization.NamingConventions;
+
 
 namespace UnityTDDHelper
 {
     public class ClassBuilder
     {
         public string Workfolder { get => "Assets/unity-tdd-helper/Resources/"; }
-
-
 
         Keywords keywords;
         public string TemplateTestClassNameKeyword { get => keywords.template_test_class_keyword; }
@@ -28,7 +29,10 @@ namespace UnityTDDHelper
         }
 
 
-
+        public Architecture ReadArchitecture(string architecturePath)
+        {    
+            return Deserializer.ArchitectureFromJSON(architecturePath);
+        }
 
         public object CreateFile(string fileName)
         {

@@ -14,17 +14,17 @@ namespace UnityTDDHelper
         string description;
         public string Description { get => description; }
 
-        IEnumerable<IFunctionRepresentation> functions;
+        IFunctionRepresentation[] functions;
 
 
-        public IEnumerable<IFunctionRepresentation> Functions { get => functions; }
+        public IFunctionRepresentation[] Functions { get => functions; }
 
-        public IEnumerable<IFieldRepresentation> properties;
+        public IFieldRepresentation[] properties;
 
-        public IEnumerable<IFieldRepresentation> Properties { get => properties; }
+        public IFieldRepresentation[] Properties { get => properties; }
 
 
-        public ClassRepresentation(string name, string classNamespace, string description, IEnumerable<IFunctionRepresentation> Functions = null, IEnumerable<IFieldRepresentation> Properties= null)
+        public ClassRepresentation(string name, string classNamespace, string description, IFunctionRepresentation[] Functions = null, IFieldRepresentation[] Properties= null)
         {
             this.name = name;
             this.classNamespace = classNamespace;

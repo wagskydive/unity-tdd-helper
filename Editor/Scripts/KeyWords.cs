@@ -15,7 +15,6 @@ namespace UnityTDDHelper
 
         public static Keywords LoadKeywords(string keywordsFilePath)
         {
-            File.ReadAllText(keywordsFilePath);
 
             var input = new StringReader(File.ReadAllText(keywordsFilePath));
 

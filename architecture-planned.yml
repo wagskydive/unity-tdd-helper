@@ -1,4 +1,4 @@
-Name: project-name
+ProjectName: project-name
 Description: This is my amazing project
 Path: "/MY_UNITY_PROJECT/"
 Remote: https://gitcloud.com/god/heaven-and-earth
@@ -27,7 +27,7 @@ Classes:
     - Name: private-my-image-texture
     ReturnType: void
   - Name: MyOtherFunction
-    Operation Type: DataCreator
+    OperationType: DataCreator
     Description: My other function purpose
     Parameters:
     - Name: private-my-private-property-name

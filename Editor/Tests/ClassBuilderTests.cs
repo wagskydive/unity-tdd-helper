@@ -12,6 +12,8 @@ public class ClassBuilderTests
 
     string configPath = "Assets/unity-tdd-helper/architecture-config.yml";
     string keywordsPath = "Assets/unity-tdd-helper/template-keywords.yml";
+
+    string architecturePath = "Assets/unity-tdd-helper/architecture-planned.json";
     string fileTestContent = "TestContent";
 
     [Test]
@@ -62,8 +64,38 @@ public class ClassBuilderTests
     }
 
     [Test]
-    public void Creates_Output_In_architecture_yml()
+    public void Creates_Output_In_architecture_json()
     {
         Assert.That(false);
+    }
+
+    [Test]
+    public void Creates_Architecture_Instance_With_Project_Name()
+    {
+        var classBuilder = new ClassBuilder(configPath, keywordsPath);
+        Architecture architecture = classBuilder.ReadArchitecture(architecturePath);
+        Assert.That(architecture.ProjectName == "project-name");
+    }
+
+
+    [Test]
+    public void Creates_Architecture_Instance_With_All_Details()
+    {
+        var classBuilder = new ClassBuilder(configPath, keywordsPath);
+        Architecture architecture = classBuilder.ReadArchitecture(architecturePath);
+
+        Assert.That(architecture.ProjectName == "project-name");
+        Assert.That(architecture.Path == "/MY_UNITY_PROJECT/");
+        Assert.That(architecture.Remote == "https://gitcloud.com/god/heaven-and-earth");
+        Assert.That(architecture.How == "Description of the system in more detail, will be added to README.md");
+    }
+
+    [Test]
+    public void Creates_Architecture_Instance_With_Classes_And_Functions()
+    {
+        var classBuilder = new ClassBuilder(configPath, keywordsPath);
+        Architecture architecture = classBuilder.ReadArchitecture(architecturePath);
+
+        Assert.That(architecture.Classes[0].Name == "MyMainClass");
     }
 }
