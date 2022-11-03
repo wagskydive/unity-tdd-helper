@@ -33,7 +33,7 @@ Classes:
     - Name: private-my-private-property-name
     - Name: my-parameter-name
     Return Type: Texture2D
-- 'Name:': MySubClass
+- Name: MySubClass
   Description: My main class purpose
   Properties:
   - Name: my property name
