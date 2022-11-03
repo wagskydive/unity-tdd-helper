@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
@@ -5,10 +6,15 @@ using YamlDotNet.Serialization.NamingConventions;
 internal class KeyWords
 {
 
-    public string template_test_class_keyword;
+    public string template_test_class_keyword;//{get=> this.template_test_class_keyword; set => SetTemplateTestClassKeyword(value);}
+
+    private void SetTemplateTestClassKeyword(string keyword)
+    {
+        template_test_class_keyword = keyword;
+    }
+
     public string template_test_function_keyword;
 
-    public string TestClassName;
     public static KeyWords LoadKeyWords(string keywordsFilePath)
     {
         File.ReadAllText(keywordsFilePath);

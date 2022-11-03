@@ -9,7 +9,7 @@ public class ClassBuilder
 
     
     KeyWords keywords;
-    public string TestClassNameKeyWord { get => keywords.TestClassName; }
+    public string TemplateTestClassNameKeyWord { get => keywords.template_test_class_keyword; }
 
 
 
