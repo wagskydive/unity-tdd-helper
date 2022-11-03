@@ -25,3 +25,5 @@ Unity Editor Tool
 ###### Git settings
 * change the master branch protection to pull request required
 
+#####
+* using VS Code extension "GitHub Pull Requests and Issues"
