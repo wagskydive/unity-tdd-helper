@@ -6,6 +6,7 @@ namespace UnityTDDHelper
     public class Architecture : IArchitecture
     {
         private string projectName;
+        private string projectNameSpace;
         private string description;
         private string projectPath;
         private string remote;
@@ -13,6 +14,7 @@ namespace UnityTDDHelper
 
         private IClassRepresentation[] classes;
         public string ProjectName { get => projectName; }
+        public string ProjectNamespace { get => projectNameSpace; }
 
         public string Description { get => description; }
 
@@ -24,9 +26,10 @@ namespace UnityTDDHelper
 
         public IClassRepresentation[] Classes { get => classes; }
 
-        public Architecture(string projectName, string description, string projectPath, string remote, string how, IClassRepresentation[] classes)
+        public Architecture(string projectName, string projectNameSpace, string description, string projectPath, string remote, string how, IClassRepresentation[] classes)
         {
             this.projectName = projectName;
+            this.projectNameSpace = projectNameSpace;
             this.description = description;
             this.projectPath = projectPath;
             this.remote = remote;
