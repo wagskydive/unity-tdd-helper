@@ -9,8 +9,8 @@ namespace UnityTDDHelper
 
         string Description { get; }
 
-        IEnumerable<IFunctionRepresentation> Functions { get; }
-        IEnumerable<IFieldRepresentation> Properties { get; }
+        IFunctionRepresentation[] Functions { get; }
+        IFieldRepresentation[] Properties { get; }
 
     }
 }
