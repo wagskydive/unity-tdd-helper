@@ -20,8 +20,8 @@ public class ClassBuilderTests
         var classBuilder = new ClassBuilder(configPath, keywordsPath);
         classBuilder.CreateFile(fileName);
 
-        Assert.That(File.Exists(classBuilder.Workfolder+fileName));
-        File.Delete(classBuilder.Workfolder+fileName);
+        Assert.That(File.Exists(classBuilder.Workfolder + fileName));
+        File.Delete(classBuilder.Workfolder + fileName);
     }
 
 
@@ -30,18 +30,18 @@ public class ClassBuilderTests
     {
         var classBuilder = new ClassBuilder(configPath, keywordsPath);
         classBuilder.CreateFile(fileName);
-        classBuilder.WriteIntoFile(classBuilder.Workfolder+fileName,fileTestContent);
+        classBuilder.WriteIntoFile(classBuilder.Workfolder + fileName, fileTestContent);
 
 
-        
-        Assert.That(File.ReadAllText(classBuilder.Workfolder+fileName).Contains(fileTestContent));
-        File.Delete(classBuilder.Workfolder+fileName);
+
+        Assert.That(File.ReadAllText(classBuilder.Workfolder + fileName).Contains(fileTestContent));
+        File.Delete(classBuilder.Workfolder + fileName);
     }
 
     [Test]
     public void ClassBuilder_Reads__template_test_class_keyword__TEST_CLASS_NAME_FROM_ArchitectureConfigYML()
     {
-        var classBuilder = new ClassBuilder(configPath,keywordsPath);
+        var classBuilder = new ClassBuilder(configPath, keywordsPath);
 
 
         string keyword = "TEST_CLASS_NAME";
@@ -49,7 +49,21 @@ public class ClassBuilderTests
         Assert.That(classBuilder.TemplateTestClassNameKeyword == keyword);
     }
 
+    [Test]
+    public void Reads_template_class_cstemplate_File()
+    {
+        Assert.That(false);
+    }
 
+    [Test]
+    public void Replaces_Keywords_As_Defined()
+    {
+        Assert.That(false);
+    }
 
-
+    [Test]
+    public void Creates_Output_In_architecture_yml()
+    {
+        Assert.That(false);
+    }
 }
