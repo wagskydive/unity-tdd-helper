@@ -24,6 +24,9 @@ Unity Editor Tool
 
 ###### Git settings
 * change the master branch protection to pull request required
+* intall VS Code extension "GitHub Pull Requests and Issues"
 
-#####
-* using VS Code extension "GitHub Pull Requests and Issues"
+##### Dependencies
+
+* uses YamlDotNet Unity package
+* uses NUnit .NET package
