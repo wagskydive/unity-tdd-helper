@@ -1,25 +1,30 @@
+using System;
 using System.IO;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
-internal class KeyWords
+
+namespace UnityTDDHelper
 {
-
-    public string template_test_class_keyword;
-    public string template_test_function_keyword;
-
-    public string TestClassName;
-    public static KeyWords LoadKeyWords(string keywordsFilePath)
+    public class Keywords
     {
-        File.ReadAllText(keywordsFilePath);
 
-        var input = new StringReader(File.ReadAllText(keywordsFilePath));
+        public string template_test_class_keyword { get; private set; }
 
-        var deserializer = new DeserializerBuilder()
-            .WithNamingConvention(UnderscoredNamingConvention.Instance)
-            .Build();
+        public string template_test_function_keyword { get; private set; }
 
-        return deserializer.Deserialize<KeyWords>(input);
+        public static Keywords LoadKeywords(string keywordsFilePath)
+        {
+            File.ReadAllText(keywordsFilePath);
+
+            var input = new StringReader(File.ReadAllText(keywordsFilePath));
+
+            var deserializer = new DeserializerBuilder()
+                .WithNamingConvention(UnderscoredNamingConvention.Instance)
+                .Build();
+
+            return deserializer.Deserialize<Keywords>(input);
+        }
+
     }
-
 }
