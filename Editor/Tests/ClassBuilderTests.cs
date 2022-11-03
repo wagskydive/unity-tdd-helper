@@ -4,6 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using System.IO;
+using UnityTDDHelper;
 
 public class ClassBuilderTests
 {
@@ -47,6 +48,7 @@ public class ClassBuilderTests
 
         Assert.That(classBuilder.TemplateTestClassNameKeyWord == keyword);
     }
+
 
 
 
