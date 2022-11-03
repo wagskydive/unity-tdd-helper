@@ -2,48 +2,51 @@ using System;
 using System.IO;
 using UnityEngine;
 
-public class ClassBuilder
+namespace UnityTDDHelper
 {
-    public string Workfolder { get => "Assets/unity-tdd-helper/Resources/"; }
-
-
-    
-    KeyWords keywords;
-    public string TestClassNameKeyWord { get => keywords.TestClassName; }
-
-
-
-    public ClassBuilder(string configPath, string keywordsPath)
+    public class ClassBuilder
     {
-        if (!File.Exists(configPath) || !File.Exists(keywordsPath))
-        {      
-            throw new ArgumentException("Config file not found");
-        }
-        else
+        public string Workfolder { get => "Assets/unity-tdd-helper/Resources/"; }
+
+
+
+        Keywords keywords;
+        public string TemplateTestClassNameKeyword { get => keywords.template_test_class_keyword; }
+
+
+
+        public ClassBuilder(string configPath, string keywordsPath)
         {
-            ReadKeywords(keywordsPath);
+            if (!File.Exists(configPath) || !File.Exists(keywordsPath))
+            {
+                throw new ArgumentException("Config or Keywords file not found");
+            }
+            else
+            {
+                ReadKeywords(keywordsPath);
+            }
         }
-    }
 
 
 
 
-    public object CreateFile(string fileName)
-    {
-        FileStream file = File.Create(Workfolder + fileName);
-        file.Close();
-        return file;
-    }
+        public object CreateFile(string fileName)
+        {
+            FileStream file = File.Create(Workfolder + fileName);
+            file.Close();
+            return file;
+        }
 
-    public void WriteIntoFile(string filePath, string content)
-    {
+        public void WriteIntoFile(string filePath, string content)
+        {
 
-        File.WriteAllText(filePath, content);
+            File.WriteAllText(filePath, content);
 
-    }
+        }
 
-    public void ReadKeywords(string keywordsPath)
-    {
-        keywords = KeyWords.LoadKeyWords(keywordsPath);
+        public void ReadKeywords(string keywordsPath)
+        {
+            keywords = Keywords.LoadKeywords(keywordsPath);
+        }
     }
 }
