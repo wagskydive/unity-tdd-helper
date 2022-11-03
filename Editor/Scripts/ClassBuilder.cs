@@ -12,8 +12,7 @@ namespace UnityTDDHelper
         public string Workfolder { get => "Assets/unity-tdd-helper/Resources/"; }
 
         Keywords keywords;
-        public string TemplateTestClassNameKeyword { get => keywords.template_test_class_keyword; }
-
+        public Keywords KeywordsInstance { get => keywords; }
 
 
         public ClassBuilder(string configPath, string keywordsPath)
@@ -51,6 +50,11 @@ namespace UnityTDDHelper
         public void ReadKeywords(string keywordsPath)
         {
             keywords = Keywords.LoadKeywords(keywordsPath);
+        }
+
+        public void ReadTemplate(string templatePath)
+        {
+            // TODO: Create Template Type to construct the final files
         }
     }
 }

@@ -57,7 +57,7 @@ public class ClassBuilderTests
 
         string keyword = "TEST_CLASS_NAME";
 
-        Assert.That(classBuilder.TemplateTestClassNameKeyword == keyword);
+        Assert.That(classBuilder.Keywords.template_test_class_keyword == keyword);
     }
 
     [Test]
