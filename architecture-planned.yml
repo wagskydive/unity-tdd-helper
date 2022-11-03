@@ -1,5 +1,10 @@
+Name: project-name
+Description: This is my amazing project
+Path: "/MY_UNITY_PROJECT/"
+Remote: https://gitcloud.com/god/heaven-and-earth
+How: Description of the system in more detail, will be added to README.md
 Classes:
-- 'Name:': MyMainClass
+- Name: MyMainClass
   Description: My main class purpose
   Properties:
   - Name: my private property name
