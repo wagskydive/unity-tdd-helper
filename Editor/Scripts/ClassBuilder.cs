@@ -11,7 +11,7 @@ namespace UnityTDDHelper
 
 
         Keywords keywords;
-        public string TemplateTestClassNameKeyWord { get => keywords.template_test_class_keyword; }
+        public string TemplateTestClassNameKeyword { get => keywords.template_test_class_keyword; }
 
 
 
