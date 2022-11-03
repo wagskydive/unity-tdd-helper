@@ -20,8 +20,6 @@ internal class KeyWords
             .Build();
 
         return deserializer.Deserialize<KeyWords>(input);
-
-
     }
 
 }
